@@ -5,6 +5,10 @@
   "private": true,
   "devDependencies": {
     "gitbook": "^1.5.0",
+    "gitbook-plugin-json": "0.0.8",
+    "gitbook-plugin-mathjax": "0.0.6",
+    "gitbook-plugin-discourse": "0.0.6",
+    "gitbook-plugin-lexicon": "0.0.6",
     "google-spreadsheet-download": "*",
     "gulp": "^3.8.10",
     "gulp-gh-pages": "^0.4.0"
@@ -13,7 +17,6 @@
     "republish": "npm run republish:lexicon && npm run republish:glossary",
     "republish:lexicon": "google-spreadsheet-download 1CGni6oPLXliLGWleBSCHYd3zQfsiIc5-SSOfS3F9TTg 13 > lexicon.json",
     "republish:glossary": "node -e 'JSON.parse(require(\"fs\").readFileSync(\"lexicon.json\")).map(function(d){if(d[\"title\"]&&d[\"definition\"]){console.log(\"\\n# \"+d[\"title\"]+\"\\n\"+d[\"definition\"].trim().replace(/\\n{2,}/g,\"\\n\"))}})' > GLOSSARY.md",
-    "postinstall": "gitbook install .",
     "test": "npm run build",
     "build": "gitbook build .",
     "serve": "gitbook serve .",
