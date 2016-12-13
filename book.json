@@ -1,8 +1,7 @@
 {
   "plugins": [
     "lexicon",
-    "json",
-    "discourse"
+    "json"
   ],
   "pluginsConfig": {
     "json": {
