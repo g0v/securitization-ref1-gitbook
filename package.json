@@ -8,6 +8,7 @@
     "gitbook-plugin-json": "0.0.8",
     "gitbook-plugin-mathjax": "0.0.6",
     "gitbook-plugin-discourse": "0.0.6",
+    "gitbook-plugin-lexicon": "0.0.6",
     "google-spreadsheet-download": "*",
     "gulp": "^3.8.10",
     "gulp-gh-pages": "^0.4.0"
